@@ -19,7 +19,7 @@ RUN --mount=type=cache,target=/root/.cache poetry install
 
 FROM base as dev
 
-COPY --chown=user:user ./api api
+COPY --chown=user:user ./app app
 
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "5000", "--reload"]
 
@@ -39,7 +39,7 @@ COPY --chown=user:user ./.pre-commit-config.yaml .pre-commit-config.yaml
 RUN mkdir /home/user/.mypy_cache && chown -R user:user /home/user/.mypy_cache
 RUN pre-commit install --install-hooks
 
-COPY --chown=user:user ./api api
+COPY --chown=user:user ./app app
 
 # Default target.
 FROM dev
