@@ -2,7 +2,7 @@ from fastapi import Depends, FastAPI, HTTPException
 from starlette.responses import RedirectResponse
 from starlette.status import HTTP_201_CREATED
 
-from api.repository import Todo, TodoFilter, TodoRepository, create_todo_repository
+from app.repository import Todo, TodoFilter, TodoRepository, create_todo_repository
 
 app = FastAPI(swagger_ui_parameters={"tryItOutEnabled": True})
 

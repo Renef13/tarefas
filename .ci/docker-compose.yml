@@ -4,7 +4,7 @@ services:
   unit:
     build:
       context: ..
-      dockerfile: api/Dockerfile
+      dockerfile: ../app/Dockerfile
       target: test
     environment:
       - DB_STRING=postgresql://postgres:test@ci_db:5432/postgres
@@ -14,7 +14,7 @@ services:
       - ci_db
     build:
       context: ..
-      dockerfile: api/Dockerfile
+      dockerfile: ../app/Dockerfile
       target: test
     environment:
       - DB_STRING=postgresql://postgres:test@ci_db:5432/postgres

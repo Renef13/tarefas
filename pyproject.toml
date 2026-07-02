@@ -1,14 +1,14 @@
 [tool.poetry]
-name = "fastapi-template"
+name = "tarefas"
 version = "1.3.0"
 
-authors = ["Donny Peeters <donny.peeters@hotmail.com>"]
-maintainers = ["Donny Peeters <donny.peeters@hotmail.com>"]
-description = "A FastAPI and SQLAlchemy project template with Docker and GitHub Actions."
+authors = ["Renef Silva <renefricardo@mail.com>"]
+maintainers = ["Renef Silva <renefricardo@mail.com>"]
+description = "API para gerenciamento de projetos e tarefas."
 readme = "README.md"
-homepage = "https://github.com/Donnype/fastapi-template"
-repository = "https://github.com/Donnype/fastapi-template"
-keywords = ["FastAPI", "Template"]
+homepage = "https://github.com/Renef13/tarefas"
+repository = "https://github.com/Renef13/tarefas"
+keywords = ["FastAPI", "Tarefas"]
 
 
 [tool.poetry.dependencies]

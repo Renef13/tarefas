@@ -7,8 +7,8 @@ from sqlalchemy.exc import DataError, IntegrityError
 from sqlalchemy.orm import sessionmaker
 from starlette.testclient import TestClient
 
-from api.main import app
-from api.repository import (
+from app.main import app
+from app.repository import (
     SQL_BASE,
     InMemoryTodoRepository,
     SQLTodoRepository,
