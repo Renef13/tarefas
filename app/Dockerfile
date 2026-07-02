@@ -21,7 +21,7 @@ FROM base as dev
 
 COPY --chown=user:user ./api api
 
-CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "5000", "--reload"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "5000", "--reload"]
 
 
 FROM base as test
